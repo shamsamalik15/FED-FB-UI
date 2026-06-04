@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+width: 90%;
+height: auto;
+display: flex;
+padding: 10px;
+/* box-shadow: rgba(0 , 0 , 0 , 0.24) 0px 3px 8px; */
+}
+
+
+   
+h2{
+    font-size: 20px;
+}
+
+.left-area {
+    width: 60%;
+
+}
+
+.right-area { 
+    width: 40%;
+
+}
+
+
+
+.left-area { 
+    display: flex;
+    justify-content: end;
+
+}
+
+.left-area > img {
+    width: 800px;
+    height: auto;
+}
+
+.right-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px
+    }
+
+.login-form{
+    width: 100%;
+}
+
+.input-email{
+    /* background-color: aqua; */
+    width: 80%;
+    margin-top: 15px;
+}  
+
+.input-password {
+    margin-top: 5px;
+    width: 80%
+    
+}
+
+.inputbox > input{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding-left: 15px;
+}
+
+
+    .btnbox{
+    margin-top: 15PX;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+  }
+
+  .btnbox > #login{
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    background-color: #0064E0;
+    color: white;
+    font-size: 15px;
+    font-weight:normal;
+    cursor: pointer;
+    width:80%
+  }
+
+    .btnbox > #forgot-password{
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    /* border:1px solid  rgb(204, 204, 204); */
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+    width: 80%;
+  }
+
+  .btnbox > #forgot-password:hover{
+    background-color: rgb(216, 214, 214);
+    transition: 2s;
+  }
+
+    .btnbox > #new-account{
+    height: 40px;
+    border-radius: 25px;
+    /* border: none; */
+    border:1px solid  #0064E0;;
+    background-color: white;
+    color: #0064E0;;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+    width: 80%;
+  }
+
+  .btnbox > #new-account:hover{
+    background-color: rgb(216, 214, 214);
+    transition: 2s;
+  }
+
+  .logo{
+    display: flex;
+    justify-content: center;
+    margin-right: 120px;
+    margin-top: 15px;
+  }
+
+
+/* 476px se 1024px px tak ye meri media query kaam kare gi */
+  @media only screen and (max-width:1024px) {
+    .left-area {
+        width: 50%;
+
+    }
+    .left-area > img {
+    width: 400px;
+    height:auto;
+    object-fit: contain;
+}
+
+    .right-area { 
+    width: 50%;
+
+}
+
+   .login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnbox{
+    width:100%;
+    align-items: center;
+}
+  }
+
+
+
+  /* 0 se 470 px tak ye meri media query kaam kare gi */
+  @media only screen and (max-width:470px){
+    .left-area {
+        display:none;
+
+    }
+
+    .right-area{
+        width: 100%;
+        padding: 0px;
+    }
+    
+    .input-email{
+    /* background-color: aqua; */
+    width: 100%;
+    margin-top: 15px;
+} 
+
+    .input-password {
+    margin-top: 5px;
+    width: 100%
+    
+}
+
+    .btnbox > #login{
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    background-color: #0064E0;
+    color: white;
+    font-size: 15px;
+    font-weight:normal;
+    cursor: pointer;
+    width:100%
+  }
+
+      .btnbox > #forgot-password{
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    /* border:1px solid  rgb(204, 204, 204); */
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+    width: 100%;
+  }
+
+       .btnbox > #new-account{
+    height: 40px;
+    border-radius: 25px;
+    /* border: none; */
+    border:1px solid  #0064E0;;
+    background-color: white;
+    color: #0064E0;;
+    font-size: 15px;
+    font-weight: normal;
+    cursor: pointer;
+    width: 100%;
+  }
+  }
